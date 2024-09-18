@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Predict Output Voltage{% endblock %}
+
+{% block content %}
+<section id="predict" class="mt-5">
+    <h2 class="text-primary" data-aos="fade-up">Predict Output Voltage</h2>
+    <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="sound_decibel">Enter Sound Decibel:</label>
+                    <input type="number" class="form-control" id="sound_decibel" name="sound_decibel" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+        </div>
+    </div>
+
+    {% if predicted_voltage is not none %}
+    <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h3 class="card-title">Prediction Results</h3>
+            <p class="card-text">Predicted Output Voltage for {{ sound_decibel }} dB: {{ predicted_voltage }} mV</p>
+        </div>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

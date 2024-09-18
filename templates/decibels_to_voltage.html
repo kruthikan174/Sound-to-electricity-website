@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Decibels to Voltage{% endblock %}
+
+{% block content %}
+<section id="decibels_to_voltage" class="mt-5">
+    <h1 class="header-title">Decibels to Voltage</h1>
+    <div class="card mt-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h2 class="text-primary">Sound Input vs Output Voltage</h2>
+            <form method="POST" action="{{ url_for('decibels_to_voltage') }}">
+                <div class="form-group">
+                    <label for="sound_decibel">Enter Sound Decibel (dB):</label>
+                    <input type="number" step="0.01" class="form-control" id="sound_decibel" name="sound_decibel" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Predict Voltage</button>
+            </form>
+            {% if predicted_voltage is not none %}
+            <div class="mt-4">
+                <h4>Predicted Output Voltage: {{ predicted_voltage }} mV</h4>
+            </div>
+            {% endif %}
+            <img src="{{ url_for('static', filename='sound_vs_voltage.png') }}" alt="Sound vs Voltage" class="img-fluid mt-4">
+        </div>
+    </div>
+</section>
+{% endblock %}

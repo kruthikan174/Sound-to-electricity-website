@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Sound to Electricity - Electricity Sources{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h2 class="display-5 text-primary" data-aos="fade-up" data-aos-duration="1500">Electricity Sources</h2>
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <p>To Download the Data set <a href="https://www.kaggle.com/datasets/navinmundhra/daily-power-generation-in-india-20172020" target="_blank">Click Here</a> </p>
+            <img src="{{ url_for('static', filename='images/comparison_all_sources.png') }}" class="img-fluid rounded mb-3" alt="Comparison of Hydro, Thermal, and Nuclear Generation by Region">
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Sound to Electricity - Resources{% endblock %}
+
+{% block content %}
+<section id="resources" class="resources-page mt-5">
+    <h1 class="display-5 text-primary">Resources</h1>
+
+    <div class="card mt-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h2>Phase 1</h2>
+            <ul class="list-unstyled">
+                <li><a href="{{ url_for('static', filename='EL Phase1 poster.pdf') }}">Phase 1 Poster</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mt-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h2>Phase 2</h2>
+            <ul class="list-unstyled">
+                <li><a href="{{ url_for('static', filename='EL Phase2 PPT.pdf') }}">Phase 2 PPT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mt-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h2>Phase 3</h2>
+            <ul class="list-unstyled">
+                <li><a href="{{ url_for('static', filename='poster.pdf') }}">Phase 3 Poster</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card mt-4" data-aos="fade-up" data-aos-duration="1500">
+        <div class="card-body">
+            <h2>Journals</h2>
+            <ul class="list-unstyled">
+                <li><a href="{{ url_for('static', filename='honey comb helmholtz resonators.pdf') }}">Honey Comb Helmholtz Resonator</a></li>
+                <li><a href="{{ url_for('static', filename='Piezoelectric-Based-Electric-Energy-Generation-From-Sound-Energy.pdf') }}">Piezoelectric Based Electric Energy Generation From Sound Energy</a></li>
+                <li><a href="{{ url_for('static', filename='doc.pdf') }}">Honey Comb Helmholtz Resonator</a></li>
+                <li><a href="{{ url_for('static', filename='Conversion_of_Sound.pdf') }}">Conversion of Sound</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

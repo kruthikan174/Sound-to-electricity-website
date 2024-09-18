@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Data Visualization{% endblock %}
+
+{% block content %}
+<section>
+    <h2 data-aos="fade-up" data-aos-duration="1500">Data Visualization</h2>
+    <p data-aos="fade-up" data-aos-duration="1500">This page provides visual insights into our data. Below are some of the key visualizations we have generated.</p>
+    <div class="plot-container">
+        <p>To Download the Data set <a href="https://www.kaggle.com/datasets/rohanrao/noise-monitoring-data-in-india" target="_blank">Click Here</a> </p>
+        <img src="{{ url_for('static', filename='images/time_series.png') }}" alt="Time Series Plot" data-aos="fade-up" data-aos-duration="1500">
+        <img src="{{ url_for('static', filename='images/histograms.png') }}" alt="Histograms" data-aos="fade-up" data-aos-duration="1500">
+        <img src="{{ url_for('static', filename='images/comparison.png') }}" alt="Comparison Plot" data-aos="fade-up" data-aos-duration="1500">
+    </div>
+</section>
+{% endblock %}

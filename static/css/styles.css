@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1E90FF; /* DodgerBlue */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 4rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1E90FF; /* DodgerBlue */
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* Team Section */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.team-member img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.team-member ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team-member ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1E90FF; /* DodgerBlue */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Adjustments for horizontal cards */
+
+.card {
+    width: 100%;
+}
+
+.chart-container {
+    height: 300px; /* Adjust height as necessary */
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* Resources page specific styles */
+.resources-page a {
+    color: #000;
+    text-decoration: none;
+}
+
+.resources-page a:hover {
+    text-decoration: underline;
+}
+
+.resources-page h2 {
+    color: #1E90FF;
+}
+
+/* Effects */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+[data-aos=fade-up] {
+    transform: translateY(20px);
+}
+
+[data-aos=fade-up].aos-animate {
+    transform: translateY(0);
+}
+
+a:hover {
+    text-decoration: underline;
+}

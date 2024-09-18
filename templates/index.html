@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}Sound to Electricity{% endblock %}
+
+{% block content %}
+<section id="home" class="mt-5">
+    <h2 class="text-primary" data-aos="fade-up">Home</h2>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Introduction</h3>
+                    <p class="card-text">In the modern era, the quest for energy has predominantly been fulfilled by fossil fuels. However, the environmental and geopolitical consequences of this dependence have led to a global realization: the transition to renewable energy is not just beneficial, it is essential.</p>
+
+                   <p class="card-text">As we know, sustainability refers to the ability to meet the needs of the present without compromising the needs of the future generations. In this view, utilization of renewable energy sources instead of energy from fossils fuels is the key idea of our project.
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Problem Statement</h3>
+                   <p class="card-text">“Depletion of non-renewable sources of energy due to increase in energy consumption has created the need to find alternative sources of renewable energy like generating electricity from unwanted noise.”
+                   </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Objectives</h3>
+                   <p class="card-text">To investigate various innovative methods to generate electrical energy from acoustic sources.</p>
+                    <p class="card-text">To implement and generate electricity from acoustic sources of energy.</p>
+                    <p class="card-text">To increase the efficiency of generating electricity from acoustic sources.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Honey Comb Shaped Helmholtz Resonators</h3>
+                    <img src="{{ url_for('static', filename='helmholtz_resonators.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Piezoelectric Sensor</h3>
+                    <img src="{{ url_for('static', filename='piezo 1.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+                <div class="card-body">
+                    <img src="{{ url_for('static', filename='piezo 2.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Precision Full Wave Bridge Rectifier</h3>
+                    <img src="{{ url_for('static', filename='rectifier.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Boost Convertor</h3>
+                    <img src="{{ url_for('static', filename='boost convertor.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Switching Voltage Regulator</h3>
+                    <img src="{{ url_for('static', filename='switching voltage regulator.png') }}" class="img-fluid" alt="Construction Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Project Demonstration</h3>
+                    <video controls class="img-fluid mt-4">
+                        <source src="{{ url_for('static', filename='working_video.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls class="img-fluid mt-4">
+                        <source src="{{ url_for('static', filename='demonstration.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Simulation</h3>
+                    <p class="card-text">Circuit Simuation</p>
+                    <video controls class="img-fluid mt-4">
+                        <source src="{{ url_for('static', filename='precision_rectifier_simulation.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="card-text">Real-time Simuation</p>
+                    <video controls class="img-fluid mt-4">
+                        <source src="{{ url_for('static', filename='real_time.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card mb-4" data-aos="fade-up" data-aos-duration="1500">
+                <div class="card-body">
+                    <h3 class="card-title">Future Scope</h3>
+                    <p class="card-text">Automatic mobile phone recharging techniques.</p>
+                    <p class="card-text">Industries utilize the sound energy produced to their advantage by storing it.</p>
+                    <p class="card-text">Concerts can be run without external energy source.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
